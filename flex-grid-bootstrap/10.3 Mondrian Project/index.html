@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      background: white;
+    }
+
+    .red {
+      background: red;
+    }
+
+    .white {
+      background: white;
+    }
+
+    .row-1 {
+      grid-column-start: 2;
+      grid-column-end: 6;
+    }
+
+    .row-2-col-1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+
+      border-right: 9px solid black;
+      border-top: 9px solid black;
+      border-bottom: 9px solid black;
+    }
+
+    .row-2-col-2 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+
+      border-top: 9px solid black;
+      border-bottom: 9px solid black;
+      border-right: 9px solid black;
+    }
+
+    .row-4-col-1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+      border-right: 9px solid black;
+    }
+
+    .yellow {
+      background: yellow;
+
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+      border-right: 9px solid black;
+    }
+
+    .black {
+      background: #232629;
+
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+      border-right: 9px solid black;
+    }
+
+
+    .blue {
+      background: blue;
+
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      border-bottom: 10px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">D</div>
+    <div class="white row-1">E</div>
+    <div class="white row-2-col-1">F</div>
+    <div class="white row-2-col-2">G</div>
+    <div class="blue">H</div>
+    <div class="white row-4-col-1">I</div>
+    <div class="white yellow">J</div>
+    <div class="black">K</div>
+  </div>
+</body>
+
+</html>
